@@ -1,0 +1,66 @@
+envs:
+  - id: GuessingGame
+    version: 0
+    entry_point: envs:GuessingGame
+    timestep_limit: 200
+    description: |
+      The goal of the game is to effective use the reward provided
+        in order to understand the best action to take.
+
+        After each step the agent receives an observation of:
+        0 - No guess yet submitted (only after reset)
+        1 - Guess is lower than the target
+        2 - Guess is equal to the target
+        3 - Guess is higher than the target
+
+        The rewards is calculated as:
+        ((min(action, self.number) + self.bounds) / (max(action, self.number) + self.bounds)) ** 2
+        This is essentially the squared percentage of the way the
+        agent has guessed toward the target.
+
+        Ideally an agent will be able to recognise the 'scent' of a
+        higher reward and increase the rate in which is guesses in that
+        direction until the reward reaches its maximum.
+        requirements:
+      - gym
+      - numpy
+    files:
+      - envs/__init__.py
+      - envs/guessing_game
+    commit_hash:
+
+envs:
+  - id: HotterColder
+    version: 0
+    entry_point: envs:HotterColder
+    timestep_limit: 200
+    description: |
+      The goal of the game is to guess within 1% of the randomly
+        chosen number within 200 time steps
+
+        After each step the agent is provided with one of four possible
+        observations which indicate where the guess is in relation to
+        the randomly chosen number
+
+        0 - No guess yet submitted (only after reset)
+        1 - Guess is lower than the target
+        2 - Guess is equal to the target
+        3 - Guess is higher than the target
+
+        The rewards are:
+        0 if the agent's guess is outside of 1% of the target
+        1 if the agent's guess is inside 1% of the target
+
+        The episode terminates after the agent guesses within 1% of
+        the target or 200 steps have been taken
+
+        The agent will need to use a memory of previously submitted
+        actions and observations in order to efficiently explore
+        the available actions.
+    requirements:
+      - gym
+      - numpy
+    files:
+      - envs/__init__.py
+      - envs/hotter_colder.py
+    commit_hash:
