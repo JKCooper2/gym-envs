@@ -77,6 +77,6 @@ envs:
     files:
       - EightPuzzle/__init__.py
       - EightPuzzle/eight_puzzle.py
-    commit_hash: e64e6b10b44bad08b82ff830de542f04e7d933fc
+    commit_hash: e334adee9b26bf1d3f687accf30b53fcaa50bc18
 
 
