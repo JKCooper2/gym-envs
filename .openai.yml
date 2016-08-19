@@ -27,7 +27,7 @@ envs:
     files:
       - GuessingGame/__init__.py
       - GuessingGame/guessing_game
-    commit_hash: 8252ef30f83cf84b2d839e18f524302e6c15d560
+    commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
 
 envs:
   - id: HotterColder
@@ -63,4 +63,4 @@ envs:
     files:
       - HotterColder/__init__.py
       - HotterColder/hotter_colder.py
-    commit_hash: 8252ef30f83cf84b2d839e18f524302e6c15d560
+    commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
