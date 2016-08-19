@@ -1,6 +1,6 @@
 envs:
   - id: GuessingGame
-    version: 0
+    version: 1
     entry_point: envs:GuessingGame
     timestep_limit: 200
     description: |
@@ -31,7 +31,7 @@ envs:
 
 envs:
   - id: HotterColder
-    version: 0
+    version: 1
     entry_point: envs:HotterColder
     timestep_limit: 200
     description: |
