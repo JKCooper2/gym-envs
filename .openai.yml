@@ -67,12 +67,13 @@ envs:
 
 envs:
   - id: EightPuzzle
-    version: 1
+    version: 0
     entry_point: EightPuzzle:EightPuzzle
     timestep_limit: 200
     requirements:
       - gym
       - numpy
+      - six
     files:
       - EightPuzzle/__init__.py
       - EightPuzzle/eight_puzzle.py
