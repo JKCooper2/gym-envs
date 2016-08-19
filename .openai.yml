@@ -78,4 +78,4 @@ envs:
     files:
       - CartPole/__init__.py
       - CartPole/cartpole.py
-    commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
+    commit_hash: 533f67e85741a5da0080368484599a40360ad19c
