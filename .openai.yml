@@ -64,3 +64,18 @@ envs:
       - HotterColder/__init__.py
       - HotterColder/hotter_colder.py
     commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
+
+envs:
+  - id: CartPole
+    version: 1
+    entry_point: CartPole:CartPole
+    timestep_limit: 500
+    reward_threshold: 475
+    requirements:
+      - gym
+      - numpy
+      - math
+    files:
+      - CartPole/__init__.py
+      - CartPole/cartpole.py
+    commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
