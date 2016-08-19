@@ -1,7 +1,7 @@
 envs:
   - id: GuessingGame
     version: 1
-    entry_point: envs:GuessingGame
+    entry_point: GuessingGame:GuessingGame
     timestep_limit: 200
     description: |
       The goal of the game is to effective use the reward provided
@@ -25,14 +25,14 @@ envs:
       - gym
       - numpy
     files:
-      - envs/__init__.py
-      - envs/guessing_game
+      - GuessingGame/__init__.py
+      - GuessingGame/guessing_game
     commit_hash: dee1c6cd1e7fe418dd371527a1e114b38f0429f7
 
 envs:
   - id: HotterColder
     version: 1
-    entry_point: envs:HotterColder
+    entry_point: HotterColder:HotterColder
     timestep_limit: 200
     description: |
       The goal of the game is to guess within 1% of the randomly
@@ -61,6 +61,6 @@ envs:
       - gym
       - numpy
     files:
-      - envs/__init__.py
-      - envs/hotter_colder.py
+      - HotterColder/__init__.py
+      - HotterColder/hotter_colder.py
     commit_hash: dee1c6cd1e7fe418dd371527a1e114b38f0429f7
