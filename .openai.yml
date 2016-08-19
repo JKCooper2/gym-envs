@@ -66,16 +66,16 @@ envs:
     commit_hash: dcd3e4e279a9b4a5c21ea366b1bc157d58ce2490
 
 envs:
-  - id: CartPole
+  - id: EightPuzzle
     version: 1
-    entry_point: CartPole:CartPoleEnv
-    timestep_limit: 500
-    reward_threshold: 475
+    entry_point: EightPuzzle:EightPuzzle
+    timestep_limit: 200
     requirements:
       - gym
       - numpy
-      - math
     files:
-      - CartPole/__init__.py
-      - CartPole/cartpole.py
-    commit_hash: 0c21b98ec02ae58fb9146d7d795e6ec9f24cf71b
+      - EightPuzzle/__init__.py
+      - EightPuzzle/eight_puzzle.py
+    commit_hash:
+
+

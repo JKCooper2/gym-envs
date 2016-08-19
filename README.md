@@ -4,3 +4,4 @@ Contains:
 
   * Hotter Colder
   * Guessing Game
+  * Eight Puzzle (Sliding Tiles)
