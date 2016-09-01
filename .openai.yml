@@ -79,4 +79,100 @@ envs:
       - EightPuzzle/eight_puzzle.py
     commit_hash: e334adee9b26bf1d3f687accf30b53fcaa50bc18
 
+envs:
+  - id: BanditTwoArmedDeterministicFixed
+    version: 0
+    entry_point: Bandit:BanditTwoArmedDeterministicFixed
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTwoArmedHighHighFixed
+    version: 0
+    entry_point: Bandit:BanditTwoArmedHighHighFixed
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTwoArmedHighLowFixed
+    version: 0
+    entry_point: Bandit:BanditTwoArmedHighLowFixed
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTwoArmedHighLowFixedNegative
+    version: 0
+    entry_point: Bandit:BanditTwoArmedHighLowFixedNegative
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTwoArmedLowLowFixed
+    version: 0
+    entry_point: Bandit:BanditTwoArmedLowLowFixed
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTenArmedRandomFixed
+    version: 0
+    entry_point: Bandit:BanditTenArmedRandomFixed
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTenArmedRandomRandom
+    version: 0
+    entry_point: Bandit:BanditTenArmedRandomRandom
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
+envs:
+  - id: BanditTenArmedRandomStochastic
+    version: 0
+    entry_point: Bandit:BanditTenArmedRandomStochastic
+    timestep_limit: 1
+    requirements:
+      - gym
+      - numpy
+    files:
+      - Bandit/__init__.py
+      - Bandit/eight_puzzle.py
+
 
